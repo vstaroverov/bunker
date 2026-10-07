@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Первый наземный уровень: сетка 100 на 12 кубиков</title>
+  <desc id="desc">Слева вход в бункер, затем непрерывный коридор до лестницы и неработающего лифта. Охранная комната расположена сбоку от боевого прохода. Справа поверхность, дорога и место для будущих построек. Показаны сетка и масштабы персонажей.</desc>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#f3e5c5" stroke-opacity=".2" stroke-width="1"/></pattern>
+    <pattern id="rock" width="100" height="65" patternUnits="userSpaceOnUse"><path d="M5 27l25-11 30 8 27-12M-6 55l19-9 22 4 17-9 30 7 24-9" fill="none" stroke="#66757a" stroke-opacity=".25" stroke-width="3"/></pattern>
+    <clipPath id="sceneClip"><rect x="80" y="150" width="2000" height="240" rx="4"/></clipPath>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#e3b16c"/></marker>
+  </defs>
+  <rect width="2200" height="720" fill="#172127"/>
+  <text x="80" y="64" fill="#f2e9d6" font-family="Arial,sans-serif" font-size="38" font-weight="700">ПЕРВЫЙ НАЗЕМНЫЙ УРОВЕНЬ</text>
+  <text x="81" y="103" fill="#d4b383" font-family="Arial,sans-serif" font-size="23">Клетка 80 × 80 см · уровень 80 × 9,6 м · улица → вход → боевой коридор → спуск</text>
+
+  <g clip-path="url(#sceneClip)">
+    <rect x="80" y="150" width="2000" height="240" fill="#a5c2c6"/>
+    <path d="M80 249L120 242l40 6 42-15 56 6 47-12 55 8 63-11 81 14 85-10 65 8 100-11 87 10 120-10 94 13 118-11 100 8 120-7 120 10 112-9 105 12 100-10 77 12v148H80z" fill="#9b8566"/>
+    <path d="M80 273l60-8 67 6 89-13 90 6 100-11 114 9 101-5 87 12 98-11 111 8 110-9 117 13 103-9 118 10 110-11 110 12 109-9 97 13v120H80z" fill="#3d4c52"/>
+    <rect x="80" y="278" width="2000" height="112" fill="url(#rock)"/>
+    <path d="M80 248l45-9 35 3 56-20 44 10 60-15 42 9 65-8 71 14 75-5 84 11 90-7 120 4 92-5 102 7 123-6 102 8 115-7 107 8 100-7 97 10 110-4 86 11" fill="none" stroke="#c2a980" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M80 226l26-33 25 30 20-17 24 22 18-24 30 24m361-30l24-53 25 57 20-26 25 28m520-28l32-60 27 65 20-31 24 33m320-29l18-56 23 61 20-25 23 24" fill="#60737b" opacity=".55"/>
+    <path d="M1090 225l23-30 15 30m12 0l18-43 17 43m18 0l16-29 19 29m325 4l18-49 19 48m20 0l21-37 18 37m16 0l10-23 12 23" fill="#3c4e57" opacity=".85"/>
+    <path d="M365 202l18-39 22 39m18 9l18-29 22 29" fill="#46565c"/>
+    <rect x="1551" y="191" width="19" height="34" fill="#405057"/><path d="M1555 191v-18h11v18" fill="#405057"/>
+    <path d="M1690 215l28-28 28 28m-22-30l16-22 22 51" fill="none" stroke="#46575e" stroke-width="9"/>
+    <path d="M1010 247C1180 229 1350 236 1490 245S1780 231 2080 249" fill="none" stroke="#a89575" stroke-width="10"/>
+    <path d="M1010 245C1180 227 1350 234 1490 243S1780 229 2080 247" fill="none" stroke="#d0bb91" stroke-width="3"/>
+    <g fill="#5f6c61"><path d="M1050 236l8-16 10 17m15-1l7-14 8 14m195 0l9-19 11 19m367 3l7-18 10 19m180 0l9-17 12 17"/></g>
+
+    <!-- Level 0 construction: surface at row 5, working passage from rows 6 to 10. -->
+    <rect x="220" y="247" width="777" height="143" fill="#29383e" stroke="#101b21" stroke-width="8"/>
+    <rect x="220" y="247" width="777" height="21" fill="#59676d"/>
+    <path d="M218 248l34-31h66l23 31z" fill="#657176" stroke="#172127" stroke-width="7"/>
+    <path d="M233 246l27-18h47l15 18z" fill="#c7a97b"/>
+    <rect x="221" y="269" width="79" height="82" fill="#80725f"/>
+    <rect x="300" y="269" width="201" height="82" fill="#706d62"/>
+    <rect x="501" y="269" width="239" height="82" fill="#7c715f"/>
+    <rect x="740" y="269" width="117" height="82" fill="#607078"/>
+    <rect x="857" y="269" width="140" height="82" fill="#4d626b"/>
+    <rect x="220" y="351" width="777" height="39" fill="#4c5c62"/>
+    <rect x="220" y="350" width="777" height="9" fill="#a59070"/>
+    <path d="M303 269v82m198-82v82m239-82v82m117-82v82" stroke="#202c32" stroke-width="10"/>
+    <path d="M338 282h133m-133 8h133m-133 8h133" stroke="#a8a495" stroke-opacity=".2" stroke-width="4"/>
+
+    <!-- Exterior bunker door: two cells wide and three high. -->
+    <rect x="260" y="290" width="40" height="60" rx="4" fill="#293c45" stroke="#d3bf93" stroke-width="4"/>
+    <path d="M270 297v45m18-45v45" stroke="#697981" stroke-width="3"/>
+    <circle cx="291" cy="319" r="3" fill="#f3b86c"/>
+    <rect x="253" y="305" width="4" height="25" rx="2" fill="#eaa85f"/>
+    <!-- Security door. -->
+    <rect x="480" y="290" width="40" height="60" rx="3" fill="#334650" stroke="#c8b590" stroke-width="4"/>
+    <rect x="485" y="310" width="5" height="15" fill="#eab064"/>
+    <rect x="514" y="286" width="27" height="20" rx="2" fill="#263a42" stroke="#c8b590" stroke-width="2"/>
+    <rect x="519" y="291" width="16" height="9" fill="#6dbab5"/>
+    <path d="M525 310v21" stroke="#2c3d43" stroke-width="4"/>
+    <!-- Guard station and crate. -->
+    <rect x="585" y="316" width="69" height="11" fill="#384d54"/>
+    <path d="M594 326v24m52-24v24" stroke="#384d54" stroke-width="6"/>
+    <rect x="602" y="290" width="28" height="21" rx="2" fill="#32434a" stroke="#bba881" stroke-width="3"/>
+    <rect x="608" y="295" width="16" height="10" fill="#6dbab5"/>
+    <rect x="672" y="320" width="35" height="29" fill="#495b5d" stroke="#c8ad7e" stroke-width="3"/>
+    <path d="M675 322l29 25m0-25l-29 25" stroke="#bb9c70" stroke-width="2"/>
+    <!-- Stairs and shaft. -->
+    <path d="M749 347h15v-13h15v-13h15v-13h15v-13h15v-13h23" fill="none" stroke="#b0a185" stroke-width="6"/>
+    <path d="M807 351l17 39m-9-39l18 39" stroke="#d4b584" stroke-width="4"/>
+    <rect x="868" y="269" width="114" height="82" fill="#2b414b" stroke="#b1aa91" stroke-width="5"/>
+    <path d="M923 271v78m-49-61h102m-102 49h102" stroke="#637b80" stroke-width="3"/>
+    <path d="M901 319l22-11 22 11" fill="none" stroke="#e9a85e" stroke-width="6" opacity=".8"/>
+    <text x="916" y="304" fill="#e9a85e" font-family="Arial,sans-serif" font-size="15" font-weight="700">OFF</text>
+    <rect x="755" y="253" width="13" height="7" fill="#ebac68"/><rect x="612" y="253" width="36" height="7" fill="#ebac68"/>
+    <path d="M300 345h540" stroke="#dbc39a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="12 8"/>
+    <!-- Hero: 2.5 cells high. -->
+    <circle cx="251" cy="309" r="8" fill="#d9ac80" stroke="#26343a" stroke-width="2"/>
+    <path d="M243 316h17l5 21h-26z" fill="#d98752" stroke="#26343a" stroke-width="2"/>
+    <path d="M245 337l-5 14m18-14l7 14m-23-28l-8 12m27-12l7 12" stroke="#26343a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M240 349h8m11 0h8" stroke="#172127" stroke-width="4"/>
+
+    <rect x="80" y="150" width="2000" height="240" fill="url(#grid)"/>
+  </g>
+  <rect x="80" y="150" width="2000" height="240" fill="none" stroke="#e0bb81" stroke-width="3"/>
+  <path d="M80 143v-14m2000 14v-14M80 135h2000" fill="none" stroke="#d7b57d" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1020" y="128" fill="#e9c58a" font-family="Arial,sans-serif" font-size="20" text-anchor="middle">100 КЛЕТОК · 80 М</text>
+  <path d="M61 150H48v240h13" fill="none" stroke="#d7b57d" stroke-width="2"/>
+  <text x="31" y="279" fill="#e9c58a" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" transform="rotate(-90 31 279)">12 КЛЕТОК · 9,6 М</text>
+  <g fill="#b3c3bf" font-family="Arial,sans-serif" font-size="15" text-anchor="middle"><text x="80" y="413">0</text><text x="280" y="413">10</text><text x="480" y="413">20</text><text x="680" y="413">30</text><text x="880" y="413">40</text><text x="1080" y="413">50</text><text x="1280" y="413">60</text><text x="1480" y="413">70</text><text x="1680" y="413">80</text><text x="1880" y="413">90</text><text x="2080" y="413">100</text></g>
+  <path d="M260 433v23m110-23v23m260-23v23m165-23v23m125-23v23m600-23v23" stroke="#d4b07b" stroke-width="2"/>
+  <g fill="#f0e5d3" font-family="Arial,sans-serif" font-size="19" text-anchor="middle"><text x="260" y="480">ВХОД</text><text x="390" y="480">БОЕВОЙ КОРИДОР</text><text x="630" y="480">БОКОВАЯ ОХРАНА</text><text x="795" y="480">ЛЕСТНИЦА</text><text x="920" y="480">ЛИФТ</text><text x="1520" y="480">ДОРОГА И МЕСТО ДЛЯ СТРОЙКИ</text></g>
+
+  <rect x="80" y="514" width="2000" height="155" rx="10" fill="#243138" stroke="#52646a" stroke-width="2"/>
+  <text x="108" y="548" fill="#e9c58a" font-family="Arial,sans-serif" font-size="21" font-weight="700">МАСШТАБ И ПРАВИЛО ПРОХОДА</text>
+  <path d="M109 634h1780" stroke="#a99575" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#e7e0d1">
+    <text x="245" y="657">рост 2 клетки · 1,6 м</text><text x="565" y="657">рост 2,5 клетки · 2 м</text><text x="930" y="657">рост 3 клетки · 2,4 м</text><text x="1260" y="657">дверь · 2 × 3 клетки</text><text x="1735" y="657">коридор · 3,2 м высоты</text>
+  </g>
+  <g stroke="#19262c" stroke-width="2">
+    <circle cx="245" cy="600" r="6" fill="#e0b28e"/><path d="M237 607h16l4 14h-24z" fill="#78917b"/><path d="M241 621l-4 13m14-13l4 13" fill="none" stroke="#19262c" stroke-width="5"/>
+    <circle cx="565" cy="591" r="7" fill="#e2b48f"/><path d="M555 599h20l5 21h-30z" fill="#dc8e54"/><path d="M558 620l-4 14m18-14l5 14" fill="none" stroke="#19262c" stroke-width="6"/>
+    <circle cx="930" cy="582" r="8" fill="#b87a5d"/><path d="M917 592h26l6 24h-38z" fill="#7d8e84"/><path d="M920 616l-5 18m25-18l5 18" fill="none" stroke="#19262c" stroke-width="7"/>
+  </g>
+  <rect x="1240" y="574" width="40" height="60" rx="3" fill="#40545d" stroke="#d5b581" stroke-width="4"/>
+  <path d="M1590 554v80m0-80h290m-290 80h290" stroke="#d4b382" stroke-width="3" stroke-dasharray="10 7"/>
+  <text x="80" y="700" fill="#aeb9b6" font-family="Arial,sans-serif" font-size="15">Концепт масштаба. Светило, погода и фон — отдельные слои; этажи ниже продолжают ту же сетку 100 × 12.</text>
+</svg>

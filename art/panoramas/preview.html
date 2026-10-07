@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Живой бункер — сезоны и погода</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, Arial, sans-serif; background: #172127; color: #e8e3d6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 28px; }
+    main { max-width: 1600px; margin: auto; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    p { line-height: 1.5; color: #bfc9c9; }
+    .controls { display: flex; flex-wrap: wrap; align-items: end; gap: 16px; margin: 22px 0; }
+    label { display: grid; gap: 6px; font-size: 14px; color: #d6b17a; }
+    select, input { min-width: 170px; padding: 9px 12px; border: 1px solid #526168; border-radius: 5px; background: #273238; color: #e8e3d6; font: inherit; }
+    input[type=range] { padding: 0; width: 180px; }
+    .stage { position: relative; width: 100%; aspect-ratio: 3 / 1; overflow: hidden; background: #273238; border: 2px solid #526168; }
+    .stage img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+    #effect { pointer-events: none; }
+    #effect[hidden] { display: none; }
+    .caption { margin-top: 12px; font-size: 15px; }
+    .note { max-width: 80ch; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Панорамы: сезон, время и погода</h1>
+    <p>Один сезонный фон и отдельный погодный слой. Выберите сочетание, чтобы сравнить настроение мира.</p>
+    <div class="controls">
+      <label>Сезон
+        <select id="season">
+          <option value="spring">Весна</option>
+          <option value="summer" selected>Лето</option>
+          <option value="autumn">Осень</option>
+          <option value="winter">Зима</option>
+        </select>
+      </label>
+      <label>Время суток
+        <select id="time"><option value="day" selected>День</option><option value="night">Ночь</option></select>
+      </label>
+      <label>Погода
+        <select id="weather">
+          <option value="clear">Ясно</option>
+          <option value="fog">Туман</option>
+          <option value="rain">Дождь</option>
+          <option value="acid-rain">Кислотный дождь</option>
+          <option value="scorching-sun">Палящее солнце</option>
+          <option value="blizzard">Вьюга</option>
+          <option value="thunderstorm">Гроза</option>
+          <option value="hurricane">Ураган</option>
+          <option value="downpour">Ливень</option>
+          <option value="tornado">Смерч</option>
+          <option value="flood">Наводнение</option>
+          <option value="snowfall">Снегопад</option>
+          <option value="hail">Град</option>
+          <option value="dust-storm">Пыльная буря</option>
+          <option value="ashfall">Пеплопад</option>
+        </select>
+      </label>
+      <label>Сила эффекта
+        <input id="strength" type="range" min="20" max="100" value="100">
+      </label>
+    </div>
+    <div class="stage" aria-label="Предпросмотр панорамы">
+      <img id="base" src="summer-day.png" alt="Панорама постапокалиптического мира">
+      <img id="effect" alt="" hidden>
+    </div>
+    <p class="caption" id="caption"></p>
+    <p class="note">Это просмотр художественных слоёв. Дождь, снег, ветер, молния, вода и повреждения построек в игре будут анимироваться и вычисляться отдельно. Сочетания сезонов и явлений ограничат правила климата.</p>
+  </main>
+  <script>
+    const season = document.getElementById('season');
+    const time = document.getElementById('time');
+    const weather = document.getElementById('weather');
+    const strength = document.getElementById('strength');
+    const base = document.getElementById('base');
+    const effect = document.getElementById('effect');
+    const caption = document.getElementById('caption');
+    function update() {
+      base.src = `${season.value}-${time.value}.png`;
+      const clear = weather.value === 'clear';
+      effect.hidden = clear;
+      if (!clear) effect.src = `weather/${weather.value}.svg`;
+      effect.style.opacity = String(Number(strength.value) / 100);
+      caption.textContent = `${season.selectedOptions[0].text} · ${time.selectedOptions[0].text} · ${weather.selectedOptions[0].text}`;
+    }
+    [season, time, weather, strength].forEach(control => control.addEventListener('input', update));
+    update();
+  </script>
+</body>
+</html>

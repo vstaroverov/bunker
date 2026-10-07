@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Живой бункер — первый экран</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="layout.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>Живой бункер</strong>
+      <span>Первый экран · технический макет</span>
+    </div>
+    <div class="top-actions">
+      <label><input id="grid-toggle" type="checkbox"> Сетка</label>
+      <button id="reset-button" type="button">Сбросить сцену</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="scene-panel" aria-label="Игровая сцена">
+      <div class="scene-heading">
+        <span>55 клеток базы</span><span>45 клеток внешнего мира</span>
+      </div>
+      <svg id="scene" viewBox="0 0 100 54" role="img" aria-label="Разрез поверхности и первого подземного этажа">
+        <defs>
+          <clipPath id="surface-clip"><rect x="0" y="0" width="100" height="26"/></clipPath>
+        </defs>
+        <rect x="0" y="0" width="100" height="54" fill="#27343b"/>
+        <image href="../../art/concepts/world-layout-background-hill.png" x="0" y="0" width="100" height="56" preserveAspectRatio="none" clip-path="url(#surface-clip)"/>
+        <rect x="0" y="26" width="100" height="28" fill="#27343b"/>
+        <rect x="0" y="26" width="100" height="2" fill="#667273"/>
+        <rect x="0" y="28" width="100" height="12" fill="#33424a"/>
+        <rect x="0" y="40" width="100" height="2" fill="#667273"/>
+        <rect x="55" y="0" width="45" height="26" fill="#55aebc" fill-opacity=".13"/>
+        <line x1="55" y1="0" x2="55" y2="26" stroke="#66bec9" stroke-width=".15" stroke-dasharray=".5 .35"/>
+        <g id="grid-layer" class="hidden"></g>
+        <g id="object-layer"></g>
+        <g id="hero-layer"></g>
+      </svg>
+      <div class="scene-footer">
+        <span id="status">Выбери объект на сцене или в списке справа.</span>
+        <span>1 клетка = 0,8 м</span>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="card" aria-live="polite">
+        <p class="eyebrow">Выбранный объект</p>
+        <h1 id="detail-title">Первый экран</h1>
+        <p id="detail-location" class="location">Поверхность · 100 клеток</p>
+        <p id="detail-text">Выбери объект и посмотри, где он находится и какое действие будет доступно игроку.</p>
+        <div id="detail-extra"></div>
+        <button id="action-button" type="button" class="primary hidden"></button>
+      </section>
+
+      <section class="card object-card">
+        <p class="eyebrow">Объекты эскиза</p>
+        <div id="object-list"></div>
+      </section>
+      <section class="card log-card">
+        <p class="eyebrow">Что произошло</p>
+        <ul id="event-log"><li>Сцена загружена.</li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

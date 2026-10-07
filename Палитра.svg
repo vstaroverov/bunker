@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Цветовая палитра игры Живой бункер">
+  <rect width="1200" height="420" fill="#172126"/>
+  <text x="42" y="55" fill="#E8E3D6" font-family="Arial, sans-serif" font-size="30" font-weight="700">ЖИВОЙ БУНКЕР — ПАЛИТРА</text>
+  <text x="42" y="87" fill="#AAB6B3" font-family="Arial, sans-serif" font-size="17">Холодный мир снаружи · тёплая жизнь внутри · ясные сигналы состояния</text>
+  <g font-family="Arial, sans-serif" font-size="17" font-weight="600">
+    <rect x="42" y="122" width="210" height="95" rx="8" fill="#273238" stroke="#68777B"/>
+    <text x="54" y="249" fill="#E8E3D6">Камень  #273238</text>
+    <rect x="275" y="122" width="210" height="95" rx="8" fill="#526168"/>
+    <text x="287" y="249" fill="#E8E3D6">Металл  #526168</text>
+    <rect x="508" y="122" width="210" height="95" rx="8" fill="#D6B17A"/>
+    <text x="520" y="249" fill="#E8E3D6">Жильё  #D6B17A</text>
+    <rect x="741" y="122" width="210" height="95" rx="8" fill="#E4A54F"/>
+    <text x="753" y="249" fill="#E8E3D6">Работа  #E4A54F</text>
+    <rect x="974" y="122" width="184" height="95" rx="8" fill="#65ADB4"/>
+    <text x="986" y="249" fill="#E8E3D6">Техника  #65ADB4</text>
+    <rect x="42" y="286" width="257" height="76" rx="8" fill="#86A96E"/>
+    <text x="54" y="394" fill="#E8E3D6">Жизнь  #86A96E</text>
+    <rect x="325" y="286" width="257" height="76" rx="8" fill="#D86A5B"/>
+    <text x="337" y="394" fill="#E8E3D6">Опасность  #D86A5B</text>
+    <rect x="608" y="286" width="257" height="76" rx="8" fill="#B8A878"/>
+    <text x="620" y="394" fill="#E8E3D6">Ядро  #B8A878</text>
+    <rect x="891" y="286" width="267" height="76" rx="8" fill="#E8E3D6"/>
+    <text x="903" y="394" fill="#E8E3D6">Текст  #E8E3D6</text>
+  </g>
+</svg>

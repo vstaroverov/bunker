@@ -1,0 +1,20 @@
+# Godot-generated files
+.godot/
+
+# .NET build output
+bin/
+obj/
+
+# Local editor settings
+.vs/
+.vscode/
+*.user
+.dotnet-cli/
+.nuget/
+.godot-user/
+
+# Local capture output from prototype runs
+/preview*.png
+/preview*.png.import
+/preview*.wav
+/preview*.wav.import
